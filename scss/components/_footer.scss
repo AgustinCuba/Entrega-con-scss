@@ -1,0 +1,51 @@
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 20px;
+    background-color: #9370DB;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+
+    div.footer-left {
+        img.logo-sticky {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    }
+
+    div.footer-left {
+        img.logo-sticky {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    }
+
+    div.footer-left {
+        img.logo-sticky {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    }
+
+    div.footer-center {
+        text-align: center;
+
+        img.logo-pagina {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        div.redes-sociales{
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+}
