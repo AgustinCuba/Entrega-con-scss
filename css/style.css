@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 body {
-    
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: linear-gradient(359deg, #BC4CB747 100%, #71C4FFFF 100%);
 }
 
 .logoTam {
@@ -59,6 +63,7 @@ body {
     justify-content: flex-start;
 
 }
+
 .productosDestacados {
     padding: 20px;
     background-color: #f9f9f9;
@@ -76,6 +81,7 @@ body {
     margin: 10px;
     text-align: center;
 }
+
 .producto img {
     max-width: 100%;
     height: auto;
@@ -85,7 +91,7 @@ body {
 @media (min-width: 600px) {
     .productosDestacados {
         display: flex;
-        flex-wrap:wrap ;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -95,6 +101,7 @@ body {
         margin: 10px;
     }
 }
+
 /*------------------------------------------*/
 /*--------------FOOTER------------*/
 .footer {
@@ -146,10 +153,12 @@ body {
         text-align: center;
     }
 
-    .footer-left, .footer-center {
+    .footer-left,
+    .footer-center {
         margin-bottom: 10px;
     }
 }
+
 /*------------------------------------------*/
 /*--------------PAGINA PRODUCTO------------*/
 .productos {
@@ -167,7 +176,7 @@ body {
     text-align: center;
     width: calc(33.333% - 40px);
     position: relative;
-    transition: transform 0.3s, box-shadow 0.3s; 
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .producto:hover {
@@ -201,7 +210,8 @@ body {
     .producto {
         width: 100%;
     }
-}   
+}
+
 /*------------------------------------------*/
 /*--------------PAGINA NOSOTROS------------*/
 .sobreNosotros {
@@ -241,6 +251,7 @@ body {
         padding: 5px;
     }
 }
+
 /*------------------------------------------*/
 /*--------------PAGINA SUCURSALES------------*/
 .sucursales {
@@ -280,7 +291,8 @@ body {
         flex-direction: column;
     }
 
-    .listaSucursales, .mapa {
+    .listaSucursales,
+    .mapa {
         margin: 0;
     }
 }
@@ -349,4 +361,3 @@ h1 {
         font-size: 14px;
     }
 }
-
