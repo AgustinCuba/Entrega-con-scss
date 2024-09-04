@@ -1,41 +1,116 @@
-main {
-    h1.tituloPrincipal{
-        text-align: center;
-    font-family: "Titillium Web", sans-serif;
-    }
-    .productosDestacados {
-        padding: 20px;
-        background-color: #f9f9f9;
 
-        h2 {
+/*
+    @keyframes slideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      // Estilo y animación para el título principal
+      %tituloPrincipal {
+        font-size: 3rem;
+        color: #4B0082;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: slideIn 1s ease-out;
+      }
+      
+      main {
+        h1.tituloPrincipal {
+          @extend %tituloPrincipal;
+        }
+      
+        .productosDestacados {
+          padding: 20px;
+          background-color: #f9f9f9;
+      
+          h2 {
             text-align: center;
             margin-bottom: 20px;
-        }
-
-        .producto {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px;
-            text-align: center;
-
+          }
+      
+          .producto {
+            @extend %productoEstilo;
+      
             img {
-                max-width: 100%;
-                height: auto;
-                border-radius: 5px;
+              @extend %productoImg;
             }
-        }
-
-        @media (min-width: 600px) {
+          }
+      
+          @media (min-width: 600px) {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-around;
-
+      
             .producto {
-                flex: 1 1 calc(33.333% - 20px);
-                margin: 10px;
+              flex: 1 1 calc(33.333% - 20px);
+              margin: 10px;
             }
+          }
         }
-    }
-}
+      }
+    */
+
+    @keyframes slideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      // Estilo y animación para el título principal
+      %tituloPrincipal {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: slideIn 1s ease-out;
+      }
+      
+      main {
+        h1.tituloPrincipal {
+          @extend %tituloPrincipal;
+          color: #4B0082; // Color específico para el título principal
+        }
+      
+        .productosDestacados {
+          padding: 20px;
+          background-color: #f9f9f9;
+      
+          h2 {
+            @extend %tituloPrincipal;
+            color: #000; // Color negro para "Productos Destacados"
+          }
+      
+          .producto {
+            @extend %productoEstilo;
+      
+            img {
+              @extend %productoImg;
+            }
+          }
+      
+          @media (min-width: 600px) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+      
+            .producto {
+              flex: 1 1 calc(33.333% - 20px);
+              margin: 10px;
+            }
+          }
+        }
+      }

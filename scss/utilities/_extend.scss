@@ -1,0 +1,147 @@
+/*extend contacto */ 
+%containerEstilo{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+%formElemento {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+%buttonEstilo {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #4cae4c;
+    }
+}
+
+/* extend index*/ 
+%tituloPrincipal {
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+}
+
+%productoEstilo {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+%productoImg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* extend nosotros*/ 
+%tituloPrincipaln {
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+}
+
+%productoEstilon {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+%productoImgn {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+%sobreNosotros {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+%sobreNosotrosli {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* extend producto */ 
+
+
+%productoStylep {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(33.333% - 40px);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+%productoImgp {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+%descuento {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*extend sucursales*/ 
+%flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+%borderBox {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+%imgResponsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+%iframeResponsive {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}

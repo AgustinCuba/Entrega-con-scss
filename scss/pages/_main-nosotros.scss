@@ -1,36 +1,67 @@
-.sobreNosotros {
-    padding: 20px;
-    background-color: #f9f9f9;
-
-    h2 {
-        color: #333;
-        margin-bottom: 10px;
+main {
+    h1.tituloPrincipal {
+        @extend %tituloPrincipaln;
     }
 
-    p {
-        color: #555;
-        line-height: 1.6;
-    }
+    .productosDestacados {
+        padding: 20px;
+        background-color: #f9f9f9;
 
-    ul {
-        list-style-type: none;
-        padding: 0;
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-        li {
-            background-color: #fff;
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+        .producto {
+            @extend %productoEstilon;
+
+            img {
+                @extend %productoImgn;
+            }
+        }
+
+        @media (min-width: 600px) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .producto {
+                flex: 1 1 calc(33.333% - 20px);
+                margin: 10px;
+            }
         }
     }
 
-    @media (max-width: 600px) {
-        padding: 10px;
+    .sobreNosotros {
+        @extend %sobreNosotros ;
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
 
         ul {
+            list-style-type: none;
+            padding: 0;
+
             li {
-                padding: 5px;
+                @extend %sobreNosotrosli;
+            }
+        }
+
+        @media (max-width: 600px) {
+            padding: 10px;
+
+            ul {
+                li {
+                    padding: 5px;
+                }
             }
         }
     }

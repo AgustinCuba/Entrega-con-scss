@@ -1,18 +1,92 @@
-header{
 
-    nav.fondoNavbar{
-        background-color: #9370DB;
-
-        div{
-
-            a{
-                img.logoTam{
-                    width: 100px;
-                    height: 100px;
-                }
+/*
+header {
+    nav.fondoNavbar {
+      background-color: #9370DB;
+  
+      div {
+        a {
+          img.logoTam {
+            width: 100px;
+            height: 100px;
+  
+            // Define la animación
+            @keyframes girar {
+              from {
+                transform: rotate(0deg);
+              }
+              to {
+                transform: rotate(360deg);
+              }
             }
+  
+            // Aplica la animación al logo
+            animation: girar 5s infinite linear;
+          }
         }
-
+      }
     }
+  }
+    */
 
-}
+    header {
+        nav.fondoNavbar {
+          background-color: #9370DB;
+      
+          div {
+            a {
+              img.logoTam {
+                width: 100px;
+                height: 100px;
+      
+                // Define la animación
+                @keyframes girar {
+                  from {
+                    transform: rotate(0deg);
+                  }
+                  to {
+                    transform: rotate(360deg);
+                  }
+                }
+      
+                // Aplica la animación al logo
+                animation: girar 5s infinite linear;
+              }
+            }
+          }
+      
+          // Animación para los elementos de la lista
+          ul.navbar-nav {
+            li.nav-item {
+              a.nav-link {
+                // Define la animación
+                @keyframes fadeIn {
+                  from {
+                    opacity: 0;
+                  }
+                  to {
+                    opacity: 1;
+                  }
+                }
+      
+                // Aplica la animación a los enlaces
+                animation: fadeIn 2s ease-in-out;
+      
+                // Opcional: animación al pasar el ratón
+                &:hover {
+                  @keyframes hoverEffect {
+                    from {
+                      transform: scale(1);
+                    }
+                    to {
+                      transform: scale(1.1);
+                    }
+                  }
+                  animation: hoverEffect 0.3s ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+      
