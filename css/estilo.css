@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -159,35 +158,6 @@ body {
   background-image: linear-gradient(359deg, rgba(188, 76, 183, 0.2784313725) 100%, #71c4ff 100%);
 }
 
-/*
-header {
-    nav.fondoNavbar {
-      background-color: #9370DB;
-
-      div {
-        a {
-          img.logoTam {
-            width: 100px;
-            height: 100px;
-
-            // Define la animación
-            @keyframes girar {
-              from {
-                transform: rotate(0deg);
-              }
-              to {
-                transform: rotate(360deg);
-              }
-            }
-
-            // Aplica la animación al logo
-            animation: girar 5s infinite linear;
-          }
-        }
-      }
-    }
-  }
-    */
 header nav.fondoNavbar {
   background-color: #9370DB;
 }
@@ -227,64 +197,6 @@ header nav.fondoNavbar ul.navbar-nav li.nav-item a.nav-link:hover {
   }
 }
 
-/*
-    @keyframes slideIn {
-        from {
-          transform: translateY(-50px);
-          opacity: 0;
-        }
-        to {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-
-      // Estilo y animación para el título principal
-      %tituloPrincipal {
-        font-size: 3rem;
-        color: #4B0082;
-        text-align: center;
-        margin-top: 20px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        animation: slideIn 1s ease-out;
-      }
-
-      main {
-        h1.tituloPrincipal {
-          @extend %tituloPrincipal;
-        }
-
-        .productosDestacados {
-          padding: 20px;
-          background-color: #f9f9f9;
-
-          h2 {
-            text-align: center;
-            margin-bottom: 20px;
-          }
-
-          .producto {
-            @extend %productoEstilo;
-
-            img {
-              @extend %productoImg;
-            }
-          }
-
-          @media (min-width: 600px) {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-
-            .producto {
-              flex: 1 1 calc(33.333% - 20px);
-              margin: 10px;
-            }
-          }
-        }
-      }
-    */
 @keyframes slideIn {
   from {
     transform: translateY(-50px);
@@ -366,64 +278,6 @@ footer.footer div.footer-center div.redes-sociales {
   text-decoration: none;
 }
 
-/*
-    @keyframes slideIn {
-        from {
-          transform: translateY(-50px);
-          opacity: 0;
-        }
-        to {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-
-      // Estilo y animación para el título principal
-      %tituloPrincipal {
-        font-size: 3rem;
-        color: #4B0082;
-        text-align: center;
-        margin-top: 20px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        animation: slideIn 1s ease-out;
-      }
-
-      main {
-        h1.tituloPrincipal {
-          @extend %tituloPrincipal;
-        }
-
-        .productosDestacados {
-          padding: 20px;
-          background-color: #f9f9f9;
-
-          h2 {
-            text-align: center;
-            margin-bottom: 20px;
-          }
-
-          .producto {
-            @extend %productoEstilo;
-
-            img {
-              @extend %productoImg;
-            }
-          }
-
-          @media (min-width: 600px) {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
-
-            .producto {
-              flex: 1 1 calc(33.333% - 20px);
-              margin: 10px;
-            }
-          }
-        }
-      }
-    */
 @keyframes slideIn {
   from {
     transform: translateY(-50px);

@@ -1,34 +1,4 @@
 
-/*
-header {
-    nav.fondoNavbar {
-      background-color: #9370DB;
-  
-      div {
-        a {
-          img.logoTam {
-            width: 100px;
-            height: 100px;
-  
-            // Define la animación
-            @keyframes girar {
-              from {
-                transform: rotate(0deg);
-              }
-              to {
-                transform: rotate(360deg);
-              }
-            }
-  
-            // Aplica la animación al logo
-            animation: girar 5s infinite linear;
-          }
-        }
-      }
-    }
-  }
-    */
-
     header {
         nav.fondoNavbar {
           background-color: #9370DB;
@@ -39,7 +9,7 @@ header {
                 width: 100px;
                 height: 100px;
       
-                // Define la animación
+                // Defino la animación
                 @keyframes girar {
                   from {
                     transform: rotate(0deg);
@@ -49,7 +19,7 @@ header {
                   }
                 }
       
-                // Aplica la animación al logo
+                // Aplico la animación al logo
                 animation: girar 5s infinite linear;
               }
             }
@@ -72,7 +42,7 @@ header {
                 // Aplica la animación a los enlaces
                 animation: fadeIn 2s ease-in-out;
       
-                // Opcional: animación al pasar el ratón
+                // animación al pasar el ratón
                 &:hover {
                   @keyframes hoverEffect {
                     from {
